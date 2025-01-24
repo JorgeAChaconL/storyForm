@@ -41,4 +41,10 @@ const title = document.getElementById('title');
 
 title.innerHTML = `The <span class="word" title="id: animal-1">${firstAnimal}</span> And The  <span class="word" title="id: animal-2">${secondAnimal}</span>`;
 
+//Select the story element and save it for later
+const storyEl = document.getElementById('story');
+
+//Insert all the story info in the html of the doc to present the modified story.
+storyEl.innerHTML = story
+
 
