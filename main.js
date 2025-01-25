@@ -17,6 +17,8 @@ const adj1 = words.get("adj-1");
 const verb1 = words.get("verb-1");
 const num1 = words.get("num-1");
 
+const answer = words.get('answer');
+const conjunction = answer === 'Yes' ? 'and' : 'but';
 const speed = words.get("speed");
 const quote = words.get("quote");
 const message = words.get("message");
@@ -45,6 +47,9 @@ title.innerHTML = `The <span class="word" title="id: animal-1">${firstAnimal}</s
 const storyEl = document.getElementById('story');
 
 //Insert all the story info in the html of the doc to present the modified story.
-storyEl.innerHTML = story
+storyEl.innerHTML = story;
 
+//Moral message content
+const moralMessage = document.getElementById('moral-message');
 
+moralMessage.innerHTML = `<span class="italics" title="id: message">"${message}"</span>`;
